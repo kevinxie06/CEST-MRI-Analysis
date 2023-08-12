@@ -1,13 +1,5 @@
 function MPRAGE_mask_generate(path, fileName, specialName)
 
-
-addpath('/Users/kevinxie/Desktop/Human_star/Scripts/toolbox');
-addpath('spm12');
-%
-%============== change special_name==========
-
-
-
 special_name = specialName;
 
 output_folder =  [path filesep 'MPRAGE'];
