@@ -63,13 +63,13 @@ In MATLAB, set it as the 'Current Folder'
 ### Organizing Data
 If you have data, please organize all of the files into one folder. You may also [download and use example data.](https://github.com/kevineix/CEST_Application/tree/main/Sample%20Data)
 
-***After completing these steps, the MATLAB application will be ready for use.***
+_After completing these steps, the MATLAB application will be ready for use._
 -
 
 ## Other Methods
 If you do not want to install the application, you may also download the [Source Code](https://github.com/kevineix/CEST_Application/blob/main/Code_CESTApp.m) and run it directly from your MATLAB Window.
 
-***Note: You still have to download the SPM12 Library AND all necessary functions from ['toolbox'](https://github.com/kevineix/CEST_Application/tree/main/toolbox) for this code to work***
+_Note: You still have to download the SPM12 Library AND all necessary functions from ['toolbox'(https://github.com/kevineix/CEST_Application/tree/main/toolbox) for this code to work_
 -
 
 ## **App Preview**
