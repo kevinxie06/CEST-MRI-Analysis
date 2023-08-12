@@ -2,6 +2,8 @@
 
 By: Kevin Xie, Kexin Wang
 
+Affiliations: The Kennedy Krieger Institute, The Johns Hopkins University School of Medicine, Baltimore, MD, USA
+
 MATLAB Version: 9.14.0.2286388 (R2023a) Update 3
 
 This repository contains the code and installation package for an application I designed to streamline the preparation and visualization of CEST MRI.
@@ -21,6 +23,7 @@ This repository contains the code and installation package for an application I 
   - SPM12 is necessary for this application
   - Please [install SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/) if you have not already
 
+
 ## **Getting Started**
 ### [Installing](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) the App
 To install the app, click [here](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) and then click on "View raw." When prompted, click "Install."
@@ -31,6 +34,8 @@ After you have installed the app, it will be located in "Apps" on your MATLAB wi
 
 <img width="380" alt="CEST App Location" src="https://github.com/kevineix/CEST_Application/assets/135569406/7eae1939-8f03-4795-8f90-4276f81ed46a">
 
+  -
+  
 ### Setting Up SPM12
 
 After you have downloaded the application into MATLAB, you will need to download the SPM12 Library.
@@ -45,7 +50,7 @@ After installing, ***you must add ALL of the Folders and Subfolders from SPM12 i
 <img width="635" alt="SPM Path Model" src="https://github.com/kevineix/CEST_Application/assets/135569406/9853ccd3-7b74-4f2f-97e2-5c4b128d9567">
 
 -
--
+
 
 ### Download Necessary [Functions](https://github.com/kevineix/CEST_Application/tree/main/toolbox)
 Along with SPM12, you will also need several other functions to go along with the application.
@@ -70,6 +75,9 @@ If you have data, please organize all of the files into one folder. You may also
 ## Other Methods
 If you do not want to install the application, you may also download the [Source Code](https://github.com/kevineix/CEST_Application/blob/main/Code_CESTApp.m) and run it directly from your MATLAB Window.
 
+<img width="635" alt="MATLAB Window" src="https://github.com/kevineix/CEST_Application/assets/135569406/c1ea4b5a-ebcb-4cbd-878e-9438e7b86a9e">
+
+
 ***Note: You still have to download the SPM12 Library AND all necessary functions from ['toolbox'](https://github.com/kevineix/CEST_Application/tree/main/toolbox) for this code to work***
 
   -
@@ -85,10 +93,13 @@ If you do not want to install the application, you may also download the [Source
 
 <img width="540" alt="Map4" src="https://github.com/kevineix/CEST_Application/assets/135569406/f9bb1400-4f0a-44fd-a431-2bd378cb9ef3">
 
+  -
+
 ### More Display Options
 <img width="540" alt="Display Options Screen" src="https://github.com/kevineix/CEST_Application/assets/135569406/b038cf31-6488-4a87-82cf-de3763107a58">
 
-
+  -
+  -
 
 Welcome to any suggestions or comments
 
