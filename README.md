@@ -1,0 +1,70 @@
+# Chemical Exchange Saturation Exchange (CEST) Preparation and Analysis
+
+By: Kevin Xie, Kexin Wang
+
+MATLAB Version: 9.14.0.2286388 (R2023a) Update 3
+
+This repository contains the code and installation package for an application I designed to assist in the preparation and visualization of CEST MRI.
+
+## Key Features
+  - SPM12 Motion-Correction
+  - Automatically Generates MPRAGE Masks (WM/GM/CSF)
+  - Creates Dual Flip Angle T1 Map
+  - Calculates Average CEST/MT Signals
+  - Intuitive and User-Friendly Interface
+
+### Toolbox
+  - The functions used within the app can be found in ‘toolbox’
+  - Utilizes SPM12 library
+
+### SPM12
+  - SPM12 is necessary for this application
+  - Please [install SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/) if you have not already
+
+## **Getting Started**
+### [Installing](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) the App
+To install the app, click [here](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) and then click on "View raw." When prompted, click "Install."
+
+After you have installed the app, it will be located in "Apps" on your MATLAB window. To open the app, simply click on the Icon.
+
+<img width="380" alt="CEST App Location" src="https://github.com/kevineix/CEST_Application/assets/135569406/7eae1939-8f03-4795-8f90-4276f81ed46a">
+
+### Setting Up SPM12
+
+After you have downloaded the application into MATLAB, you will need to download the SPM12 Library.
+
+You may install it directly from the [SPM12 Website](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/) or click [here](https://github.com/kevineix/CEST_Application/blob/main/install_spm12.md) for more instructions.
+
+Please make sure you install the correct SPM based on your platform (Windows, Linux, macOS).
+
+After installing, _You must add ALL of the Folders and Subfolders from SPM12 into your path_
+
+Upon completion, your path should look similar to this:
+
+<img width="735" alt="SPM Path Model" src="https://github.com/kevineix/CEST_Application/assets/135569406/9853ccd3-7b74-4f2f-97e2-5c4b128d9567">
+
+-
+
+### Download Necessary [Functions](https://github.com/kevineix/CEST_Application/tree/main/toolbox)
+Along with SPM12, you will also need several other functions to go along with the application.
+
+Please download every file located inside ['toolbox'](https://github.com/kevineix/CEST_Application/tree/main/toolbox)
+
+<img width="1466" alt="CEST Download Functions" src="https://github.com/kevineix/CEST_Application/assets/135569406/307425c5-63f0-4b55-acb8-fda86bbab4fc">
+
+After you have downloaded all of the functions, be sure to organize them into one folder. 
+
+In MATLAB, set it as the 'Current Folder'
+
+<img width="567" alt="CEST Current Folder" src="https://github.com/kevineix/CEST_Application/assets/135569406/5c30b0ef-a797-41fd-aa87-d76585e17b00">
+
+
+
+
+
+
+***After completing these steps, the MATLAB application will be ready for use.***
+
+
+
+
