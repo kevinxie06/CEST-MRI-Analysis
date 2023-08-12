@@ -61,16 +61,30 @@ In MATLAB, set it as the 'Current Folder'
 <img width="567" alt="CEST Current Folder" src="https://github.com/kevineix/CEST_Application/assets/135569406/5c30b0ef-a797-41fd-aa87-d76585e17b00">
 
 ### Organizing Data
-If you have data, please organize all of the files into one folder. You may also download and use example data.
+If you have data, please organize all of the files into one folder. You may also [download and use example data.](https://github.com/kevineix/CEST_Application/tree/main/Sample%20Data)
 
 ***After completing these steps, the MATLAB application will be ready for use.***
+-
 
 ## Other Methods
 If you do not want to install the application, you may also download the [Source Code](https://github.com/kevineix/CEST_Application/blob/main/Code_CESTApp.m) and run it directly from your MATLAB Window.
 
 ***Note: You still have to download the SPM12 Library AND all necessary functions from ['toolbox'](https://github.com/kevineix/CEST_Application/tree/main/toolbox) for this code to work***
+-
 
 ## **App Preview**
+### CEST Maps
+
+<img width="540" alt="Map1" src="https://github.com/kevineix/CEST_Application/assets/135569406/60003934-bdea-4b1a-8594-c682256e8683">
+
+<img width="540" alt="Map2" src="https://github.com/kevineix/CEST_Application/assets/135569406/11248951-894d-4751-a88c-4176a58f8192">
+
+<img width="540" alt="Map3" src="https://github.com/kevineix/CEST_Application/assets/135569406/2cc49d9a-e6a0-4413-bb7c-d80d1fbf44da">
+
+<img width="540" alt="Map4" src="https://github.com/kevineix/CEST_Application/assets/135569406/f9bb1400-4f0a-44fd-a431-2bd378cb9ef3">
+
+### More Display Options
+<img width="540" alt="Display Options Screen" src="https://github.com/kevineix/CEST_Application/assets/135569406/b038cf31-6488-4a87-82cf-de3763107a58">
 
 
 
