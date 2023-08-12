@@ -1,22 +1,5 @@
 function PAR_to_nii_fcn(path, fileName, specialName)
 
-addpath('toolbox');
-addpath('/Users/kevinxie/Desktop/Human_star/Scripts/toolbox');
-
-% addpath '/Users/kexinwang/Documents/CEST/AmideArgExchangRate/Phantom/Scripts/toolbox/functions';
-
-% input MPRAGE.par file here
-% Then, paste the same file into the MPRAGE function. Since this file also
-% generates the .nii file, the other function can also create the masks
-% idk how the last function works (needed to create T1map)
-
-% Use this function to convert a PAR file to a .nii
-% Then, you can create a 'special name' for it
-% Using that special name, run it through the MPRAGE function (bottom half)
-% to generate the masks
-% Finally, use the T1map dual function to generate T1 maps for each mask
-% In your app, you do not have to display each map. Just display the
-% statistics for each map
 
 %%  Convert .PAR/REC to .nii files
 
