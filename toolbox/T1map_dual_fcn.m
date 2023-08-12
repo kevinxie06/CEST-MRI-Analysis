@@ -5,10 +5,6 @@ function T1map_dual_fcn(path, fiveDeg_file, thirDeg_file)
 % OUTPUT:
 %       T1_mean and masks of T1brain, GM/WM
 
-% addpath('/Users/kevinxie/Desktop/Human_star/Scripts/toolbox');
-% special_name = specialName;
-
-
 
 %% File 1
 % File input #1
