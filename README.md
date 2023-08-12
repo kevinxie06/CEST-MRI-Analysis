@@ -4,7 +4,7 @@ By: Kevin Xie, Kexin Wang
 
 MATLAB Version: 9.14.0.2286388 (R2023a) Update 3
 
-This repository contains the code and installation package for an application I designed to assist in the preparation and visualization of CEST MRI.
+This repository contains the code and installation package for an application I designed to streamline the preparation and visualization of CEST MRI.
 
 ## Key Features
   - SPM12 Motion-Correction
@@ -15,7 +15,7 @@ This repository contains the code and installation package for an application I 
 
 ### Toolbox
   - The functions used within the app can be found in ‘toolbox’
-  - Utilizes SPM12 library
+  - Utilizes PLOF, LLIR
 
 ### SPM12
   - SPM12 is necessary for this application
@@ -90,5 +90,8 @@ If you do not want to install the application, you may also download the [Source
 
 
 
+Welcome to any suggestions or comments
+
+Email: kevinxie06@hotmail.com
 
 
