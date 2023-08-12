@@ -1,4 +1,4 @@
-classdef CESTApp_Code < matlab.apps.AppBase
+classdef Code_CESTApp < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
