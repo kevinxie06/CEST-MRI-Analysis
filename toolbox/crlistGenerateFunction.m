@@ -7,18 +7,7 @@ function crlistGenerateFunction(path, frequency)
 % create a frequency list (Hz) of Cr from ppm, which starts from *start
 % point, sp* to *end point, ep* at a step of *step*
 
-  % % Inputted path
-  %   full_path = path;
-  % 
-  %   % Deleting the last part from the path
-  %   % returns this: /Users/kevinxie/Desktop/Human_star
-  %   parentPath = fileparts(full_path);
-  % 
-  %   % Adds the 'toolbox' to the end of the path
-  %   newPath = strcat(parentPath, filesep, 'Scripts', filesep, 'toolbox');
-  % 
-  %   % Adding path 
-  %   addpath(newPath);
+
 
 fname = [path filesep 'crlist.mat']; 
 
