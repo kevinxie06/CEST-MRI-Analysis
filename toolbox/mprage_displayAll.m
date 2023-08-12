@@ -31,36 +31,7 @@ load(tname, 'T1map');
 %  Load crlist (FreqHz)
 load(offsetname, 'fullppm');
 
-
-% for i = 1:69
-% 
-%     % higher degree of interpolation = longer, but better quality
-%     % interp = 4, ~22 mins
-%     % interp = 2, ~18
-% 
-%     sourcepath = [datapath, filesep, specialName, num2str(i), '.nii,1'];
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.ref = {'/Users/kevinxie/Desktop/Human_star 2/CrMap12/friday28.nii,1'};
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.source = {sourcepath};
-%     % matlabbatch{1}.spm.spatial.coreg.estwrite.other = {''};
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.cost_fun = 'nmi';
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.sep = [4 2];
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.tol = [0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001];
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.fwhm = [7 7];
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.interp = 2;
-%     % matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.wrap = [0 0 0];
-%     % matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.mask = 0;
-%     matlabbatch{1}.spm.spatial.coreg.estwrite.roptions.prefix = 'corrected2B_';
-% 
-%     spm_jobman('run', matlabbatch);
-% end
-
 %%
-
-% gets the row and column where NaN exists
-% [row, col] = find(isnan(nii_all));
-% disp([row, col]);
-
-
 % Load first file; read data
 nii_file = [datapath filesep prefix special_name num2str(1) '.nii'];
 nii_all = niftiread(nii_file);
