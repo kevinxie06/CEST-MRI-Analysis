@@ -25,8 +25,8 @@ This repository contains the code and installation package for an application I 
 
 
 ## **Getting Started**
-### [Installing](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) the App
-To install the app, click [here](https://github.com/kevineix/CEST_Application/blob/main/AppInstaller_CEST.mlappinstall) and then click on "View raw." When prompted, click "Install."
+### [Installing](https://github.com/kevineix/CEST-MRI-Analysis/blob/main/CEST_App_Installer.mlappinstall) the App
+To install the app, click [here](https://github.com/kevineix/CEST-MRI-Analysis/blob/main/CEST_App_Installer.mlappinstall) and then click on "View raw." When prompted, click "Install."
 
 <img width="320" alt="App Install Prompt" src="https://github.com/kevineix/CEST_Application/assets/135569406/a4766bcd-39e7-43c6-945e-41fa164a8ab2">
 
