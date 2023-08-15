@@ -1,4 +1,4 @@
-classdef Code_CESTApp < matlab.apps.AppBase
+classdef Code_CESTApplication < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
@@ -180,7 +180,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
         Image_6                         matlab.ui.control.Image
     end
 
- 
+    
     properties (Access = private)
         % 0 = No confirm
         % 1 = Confirm complete
@@ -367,7 +367,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
                 figure(app.UIFigure);
                         
             end
-
         end
 
         % Value changed function: YourDirectoryEditField
@@ -408,7 +407,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
                  
              else
     
-                 try
+                 % try
                     % Getting necessary argument values
                     path = app.YourDirectoryEditField.Value;
                     cestName = app.cestimgsFileEditField.Value;
@@ -426,13 +425,12 @@ classdef Code_CESTApp < matlab.apps.AppBase
                     app.SelectOffsetLabel.Visible = 'on';
                     app.ConfirmButton.Visible = 'on';
                    
-                  catch
-                      msgbox("Could not generate .nii files. Please make sure you selected a valid file", "Error", 'error');
-    
-                 end
-    
+                 %  catch
+                 %      msgbox("Could not generate .nii files. Please make sure you selected a valid file", "Error", 'error');
+                 % 
+                 % end
+                 % 
              end
-
         end
 
         % Button pushed function: SkipStep2
@@ -471,6 +469,8 @@ classdef Code_CESTApp < matlab.apps.AppBase
             % UI
              app.ContinueButton_Step2.Visible = 'on';
 
+           catch
+
            end
 
         end
@@ -494,7 +494,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
                 figure(app.UIFigure);
 
             end
-
         end
 
         % Value changed function: referenceImageEditField
@@ -524,7 +523,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
                     msgbox("Please enter a prefix name")
             
             else
-                 try   
+                %try   
                     prefix = app.prefix_motionCorrEditField.Value;
                     
                     % Motion correct every image; SPM12
@@ -548,12 +547,13 @@ classdef Code_CESTApp < matlab.apps.AppBase
                     app.RunButton.BackgroundColor = [0.85,0.98,0.82];
                     app.ContinueButton_Step3.Visible = 'on';
 
-                catch
-                    msgbox("Could not motion correct images. Please ensure you have selected a valid reference image and offset", "Error", 'error');
+                % catch
+                %     msgbox("Could not motion correct images. Please ensure you have selected a valid reference image and offset", "Error", 'error');
+                % 
+                % end
 
-                end
+             end
 
-            end
 
         end
 
@@ -561,6 +561,8 @@ classdef Code_CESTApp < matlab.apps.AppBase
         function SkipStep3Pushed(app, event)
             app.TabGroup.SelectedTab = app.MPRAGEMaskTab;
             
+           
+        
         end
 
         % Button pushed function: ContinueButton_Step3
@@ -602,7 +604,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
           
           else
             
-              try
+              % try
                 % Function arguments
                 path = app.YourDirectoryEditField.Value;
                 MPRAGEfile= app.MPRAGEFileEditField.Value;
@@ -624,12 +626,12 @@ classdef Code_CESTApp < matlab.apps.AppBase
                 % Continue button
                 app.ContinueButton_Step4.Visible = 'on';
 
-              catch
-                msgbox("Could not generate masks. Please make sure the file you selected is valid", 'Error', 'error');
-                
-              end
+              % catch
+              %   msgbox("Could not generate masks. Please make sure the file you selected is valid", 'Error', 'error');
+              % 
+              % end
+              
           end
-
         end
 
         % Button pushed function: SkipStep4
@@ -644,7 +646,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
             app.TabGroup.SelectedTab = app.DFAT1MapTab;
 
             app.ContinueButton_Step5.Visible = 'off';
-
         end
 
         % Button pushed function: fiveDegreeButton
@@ -683,7 +684,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
               figure(app.UIFigure);
 
           end
-
         end
 
         % Value changed function: degreeangle30EditField
@@ -728,7 +728,8 @@ classdef Code_CESTApp < matlab.apps.AppBase
 
                 end
 
-            end       
+            end
+            
 
         end
 
@@ -870,9 +871,9 @@ classdef Code_CESTApp < matlab.apps.AppBase
 
         % Button pushed function: displaySingleImageButton
         function displaySingleImageButtonPushed(app, event)
-             % Displays a single slice
-             % Slices 1 & 2 are discarded, as well as the final 3 slices. 
-             % 'Slice #1' = 3rd slice
+            % Displays a single slice
+            % Slices 1 & 2 are discarded, as well as the final 3 slices. 
+            % 'Slice #1' = 3rd slice
         
              % Clear all before each display; UI
              clearOptionsAxes(app)
@@ -901,6 +902,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
                  singleSliceDisplay(app.DisplayOptions3, Zglist(:, :, sliceNumber), [0 4], inferno, 'Z_{guan} map');
                 
                  singleSliceDisplay(app.DisplayOptions4, MTlist(:, :, sliceNumber), [0 35], inferno, 'MT map');
+    
     
                 %% Calculate averaged CEST/MT signal over pixels
                 sname = [path, filesep, specialName, '_slice', num2str(sliceNumber), '_'  'ave_dZ_over_pixel.mat'];
@@ -1304,7 +1306,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
         
         
                 %% Calculate averaged CEST/MT signal over pixels   
-                
+                %
                  sname = [path, filesep, specialName, '_slice', num2str(app.track_sliceNumber), '_'  'ave_dZ_over_pixel.mat'];
                  select = [ 'AL', 'GM', 'WM', 'CS'];
         
@@ -1390,7 +1392,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
                  clear(vars{:});
                 
                  %% Calculate averaged CEST/MT signal over pixels
-                 
+                 %
                  sname = [path, filesep, specialName, '_slice', num2str(app.track_sliceNumber), '_'  'ave_dZ_over_pixel.mat'];
                  select = [ 'AL', 'GM', 'WM', 'CS'];
         
@@ -2331,7 +2333,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
             app.DisplayOptions1.YColor = 'none';
             app.DisplayOptions1.YTick = [];
             app.DisplayOptions1.Color = 'none';
-            colormap(app.DisplayOptions1, 'parula')
             app.DisplayOptions1.Position = [111 301 338 288];
 
             % Create DisplayOptions3
@@ -2342,7 +2343,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
             app.DisplayOptions3.YColor = 'none';
             app.DisplayOptions3.YTick = [];
             app.DisplayOptions3.Color = 'none';
-            colormap(app.DisplayOptions3, 'parula')
             app.DisplayOptions3.Position = [111 5 338 288];
 
             % Create DisplayOptions2
@@ -2353,7 +2353,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
             app.DisplayOptions2.YColor = 'none';
             app.DisplayOptions2.YTick = [];
             app.DisplayOptions2.Color = 'none';
-            colormap(app.DisplayOptions2, 'parula')
             app.DisplayOptions2.Position = [533 301 338 288];
 
             % Create DisplayOptions4
@@ -2364,7 +2363,6 @@ classdef Code_CESTApp < matlab.apps.AppBase
             app.DisplayOptions4.YColor = 'none';
             app.DisplayOptions4.YTick = [];
             app.DisplayOptions4.Color = 'none';
-            colormap(app.DisplayOptions4, 'parula')
             app.DisplayOptions4.Position = [533 5 338 288];
 
             % Create DisplayAllSlicesMontageButton
@@ -3082,7 +3080,7 @@ classdef Code_CESTApp < matlab.apps.AppBase
     methods (Access = public)
 
         % Construct app
-        function app = CESTApp_Code
+        function app = Code_CESTApplication
 
             % Create UIFigure and components
             createComponents(app)
