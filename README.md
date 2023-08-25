@@ -73,7 +73,7 @@ If you have data, please organize all of the files into one folder. You may also
   - 
 
 ## Other Methods
-If you do not want to install the application, you may also download the [Source Code](https://github.com/kevineix/CEST_Application/blob/main/Code_CESTApp.m) and run it directly from your MATLAB Window.
+If you do not want to install the application, you may also download the [Source Code](https://github.com/kevineix/CEST-MRI-Analysis/blob/main/SourceCode_CESTApp.m) and run it directly from your MATLAB Window.
 
 <img width="635" alt="MATLAB Window" src="https://github.com/kevineix/CEST_Application/assets/135569406/c1ea4b5a-ebcb-4cbd-878e-9438e7b86a9e">
 
