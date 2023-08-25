@@ -1,4 +1,4 @@
-function MPRAGE_mask_generate(path, fileName, specialName)
+function MPRAGE_mask_generate(path, fileName, specialName, spm12FilePath)
 
 special_name = specialName;
 
@@ -29,37 +29,37 @@ v2 = flip(v2, 1); % v2: MPRAGE in MNI space
     matlabbatch{1}.spm.spatial.preproc.channel.biasfwhm = 60;
     matlabbatch{1}.spm.spatial.preproc.channel.write = [1 1];
 
-    batch_path = [path, filesep, 'tpm', filesep, 'TPM.nii,1'];
+    batch_path = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,1'];
     matlabbatch{1}.spm.spatial.preproc.tissue(1).tpm = {batch_path};
     matlabbatch{1}.spm.spatial.preproc.tissue(1).ngaus = 1;
     matlabbatch{1}.spm.spatial.preproc.tissue(1).native = [1 0];
     matlabbatch{1}.spm.spatial.preproc.tissue(1).warped = [0 0];
 
-    batch_path2 = [path, filesep, 'tpm', filesep, 'TPM.nii,2'];
+    batch_path2 = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,2'];
     matlabbatch{1}.spm.spatial.preproc.tissue(2).tpm = {batch_path2};
     matlabbatch{1}.spm.spatial.preproc.tissue(2).ngaus = 1;
     matlabbatch{1}.spm.spatial.preproc.tissue(2).native = [1 0];
     matlabbatch{1}.spm.spatial.preproc.tissue(2).warped = [0 0];
 
-    batch_path3 = [path, filesep, 'tpm', filesep, 'TPM.nii,3'];
+    batch_path3 = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,3'];
     matlabbatch{1}.spm.spatial.preproc.tissue(3).tpm = {batch_path3};
     matlabbatch{1}.spm.spatial.preproc.tissue(3).ngaus = 2;
     matlabbatch{1}.spm.spatial.preproc.tissue(3).native = [1 0];
     matlabbatch{1}.spm.spatial.preproc.tissue(3).warped = [0 0];
 
-    batch_path4 = [path, filesep, 'tpm', filesep, 'TPM.nii,4'];
+    batch_path4 = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,4'];
     matlabbatch{1}.spm.spatial.preproc.tissue(4).tpm = {batch_path4};
     matlabbatch{1}.spm.spatial.preproc.tissue(4).ngaus = 3;
     matlabbatch{1}.spm.spatial.preproc.tissue(4).native = [0 0];
     matlabbatch{1}.spm.spatial.preproc.tissue(4).warped = [0 0];
 
-    batch_path5 = [path, filesep, 'tpm', filesep, 'TPM.nii,5'];
+    batch_path5 = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,5'];
     matlabbatch{1}.spm.spatial.preproc.tissue(5).tpm = {batch_path5};
     matlabbatch{1}.spm.spatial.preproc.tissue(5).ngaus = 4;
     matlabbatch{1}.spm.spatial.preproc.tissue(5).native = [0 0];
     matlabbatch{1}.spm.spatial.preproc.tissue(5).warped = [0 0];
 
-    batch_path6 = [path, filesep, 'tpm', filesep, 'TPM.nii,6'];
+    batch_path6 = [spm12FilePath, filesep, 'tpm', filesep, 'TPM.nii,6'];
     matlabbatch{1}.spm.spatial.preproc.tissue(6).tpm = {batch_path6};
     matlabbatch{1}.spm.spatial.preproc.tissue(6).ngaus = 2;
     matlabbatch{1}.spm.spatial.preproc.tissue(6).native = [0 0];
