@@ -1,4 +1,4 @@
-# Chemical Exchange Saturation Exchange (CEST) Preparation and Analysis
+# Chemical Exchange Saturation Transfer (CEST) Preparation and Analysis
 
 By: Kevin Xie, Kexin Wang
 
